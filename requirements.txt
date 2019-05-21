@@ -1,0 +1,7 @@
+beautifulsoup4
+selenium
+vaderSentiment
+textblob
+pandas
+setuptools
+twine

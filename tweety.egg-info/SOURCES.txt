@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+tweety.egg-info/PKG-INFO
+tweety.egg-info/SOURCES.txt
+tweety.egg-info/dependency_links.txt
+tweety.egg-info/requires.txt
+tweety.egg-info/top_level.txt
+twitter/__init__.py
+twitter/tweety.py
