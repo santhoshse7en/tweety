@@ -9,6 +9,12 @@ Twitter's API is annoying to work with, and has lots of limitations. tweety scra
 
 It appears you can ask for up to 25 pages around tweets reliably (~1200 tweets)
 
+| Source         | Link                                         | 
+| ---            |  ---                                         |
+| PyPI:          | https://pypi.org/project/tweety/             |
+| Repository:    | https://github.com/santhoshse7en/tweety/     | 
+| Documentation: | https://santhoshse7en.github.io/tweety_doc/  |
+
 ## Dependencies
 
 * selenium
