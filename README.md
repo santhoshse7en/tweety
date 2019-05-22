@@ -1,7 +1,7 @@
 [![PyPI Version](https://img.shields.io/pypi/v/tweety.svg)](https://pypi.org/project/tweety)
 [![Coverage Status](https://coveralls.io/repos/github/santhoshse7en/tweety/badge.svg?branch=master)](https://coveralls.io/github/santhoshse7en/tweety?branch=master)
 [![License](https://img.shields.io/pypi/l/tweety.svg)](https://pypi.python.org/pypi/tweety/)
-[![Documentation Status](https://readthedocs.org/projects/pip/badge/?version=latest&style=plastic)](https://santhoshse7en.github.io/tweety_doc)
+[![Documentation Status](https://readthedocs.org/projects/pip/badge/?version=latest&style=flat)](https://santhoshse7en.github.io/tweety_doc)
 
 # tweety
 
