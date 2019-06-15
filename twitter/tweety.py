@@ -43,7 +43,7 @@ class tweets:
         analyser = SentimentIntensityAnalyzer()
         neu_sum, neg_sum, compound_sum, pos_sum, count = 0,0,0,0,0
 
-        self.tweets = [' '.join(item.text.split()) for item in tweets_count]
+        self.tweets = [' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)", " ", item.text).split())) for item in tweets_count]
         sentiment_score = [analyser.polarity_scores(self.tweets[i])['compound'] for i in range(len(self.tweets))]
         polarity_score = [analyser.polarity_scores(self.tweets[i]) for i in range(len(self.tweets))]
 
