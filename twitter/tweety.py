@@ -7,7 +7,7 @@ from datetime import datetime
 import chromedriver_binary
 from requests import get
 import pandas as pd
-import time, sys
+import time, sys, re
 
 class tweets:
 
@@ -49,7 +49,7 @@ class tweets:
 
         sentiment = []
         for item in tweets_count:
-            analysis = TextBlob(' '.join(item.text.split()))
+            analysis = TextBlob(' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)", " ", item.text).split()))
             # set sentiment
             if analysis.sentiment.polarity > 0:
                 sentiment.append('positive')
