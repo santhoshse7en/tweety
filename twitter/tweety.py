@@ -4,6 +4,7 @@ from selenium import webdriver
 from textblob import TextBlob
 from bs4 import BeautifulSoup
 from datetime import datetime
+import chromedriver_binary
 from requests import get
 import pandas as pd
 import time, sys
