@@ -1,5 +1,6 @@
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
 from selenium import webdriver
 from textblob import TextBlob
 from bs4 import BeautifulSoup
@@ -28,7 +29,7 @@ class tweets:
         browser = webdriver.Chrome(options=options)
         browser.get("https://twitter.com/search?q=" + keyword)
 
-        while browser.find_element_by_tag_name('div'):
+        while browser.find_element(By.TAG_NAME, 'div'):
             browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             time_delta = datetime.now() - start_time
             sys.stdout.write('\r' + str("calculating time") + "  " + str(time_delta.seconds) +  "  " + "seconds taken to parse all the tweets from twitter" + '\r')
