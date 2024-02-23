@@ -17,9 +17,12 @@ class tweets:
     :returns: Returns all the tweets.
     """
 
-    def __init__(self, keyword):
+    def __init__(self, keyword, CustomOptions=None):
         start_time = datetime.now()
-        options = Options()
+        if CustomOptions is not None:
+            options = CustomOptions
+        else:
+            options = Options()
         options.headless = True
         options=options
         browser = webdriver.Chrome(options=options)
