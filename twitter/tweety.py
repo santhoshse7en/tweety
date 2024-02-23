@@ -18,10 +18,10 @@ class tweets:
     :returns: Returns all the tweets.
     """
 
-    def __init__(self, keyword, CustomOptions=None):
+    def __init__(self, keyword, ChromeOptions=None, BS4parser='lxml'):
         start_time = datetime.now()
-        if CustomOptions is not None:
-            options = CustomOptions
+        if ChromeOptions is not None:
+            options = ChromeOptions
         else:
             options = Options()
         options.headless = True
@@ -37,7 +37,7 @@ class tweets:
             if time_delta.seconds >= 150:
                 break
 
-        soup = BeautifulSoup(browser.page_source, 'lxml')
+        soup = BeautifulSoup(browser.page_source, BS4parser)
         browser.quit()
 
         tweets_count = soup.select('.TweetTextSize')
