@@ -30,7 +30,7 @@
 
 ---
 
-## 🧾 Dependencies
+## 📦 Dependencies
 
 * `beautifulsoup4`
 * `selenium`
