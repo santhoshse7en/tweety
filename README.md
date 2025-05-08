@@ -13,20 +13,20 @@
 
 | Resource       | URL                                                          |
 | -------------- | ------------------------------------------------------------ |
-| **PyPI**       | [tweety on PyPI](https://pypi.org/project/tweety/)           |
-| **Repository** | [GitHub Repo](https://github.com/santhoshse7en/tweety/)      |
-| **Docs**       | [Documentation](https://santhoshse7en.github.io/tweety_doc/) |
+| 🐍 PyPI	       | [tweety on PyPI](https://pypi.org/project/tweety/)           |
+| 🛠 Repository  | [GitHub Repo](https://github.com/santhoshse7en/tweety/)      |
+| 📚 Documentation| [Documentation](https://santhoshse7en.github.io/tweety_doc/) |
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-* Fetch tweets by keyword or topic without API keys.
-* Bypasses Twitter rate limits.
-* Performs sentiment analysis using **VADER** and **TextBlob**.
-* Outputs clean and structured data using **pandas**.
+* 🔍 Scrape tweets by keyword/topic — no login required
+* 🚫 No Twitter API needed — no rate limits!
+* 🧠 Sentiment analysis using **VADER** and **TextBlob**
+* 📊 Structured output using **pandas**
 
-> **Note:** You can typically scrape up to \~25 pages (\~1200 tweets) reliably in one session.
+> 🧪 You can scrape \~25 pages (\~1200 tweets) reliably in one run.
 
 ---
 
